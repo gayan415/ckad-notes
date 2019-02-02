@@ -5,6 +5,7 @@ This is common `kubectl` commands which I used during CKAD exam preparation.
 ## Contents
 
 - [Core Concepts - 13%](1-core-concepts.md)
+- [Multi-Container-Pods - 10%](3-multi-container-pods.md)
 
 ## Reference
 
