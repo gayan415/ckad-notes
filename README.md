@@ -5,7 +5,10 @@ This is common `kubectl` commands which I used during CKAD exam preparation.
 ## Contents
 
 - [Core Concepts - 13%](1-core-concepts.md)
+- [Configuration - 18%](2-configuration.md)
 - [Multi-Container-Pods - 10%](3-multi-container-pods.md)
+- [Observation - 18%](4-observability.md)
+- [Pod Design - 20%](5-pod-design.md)
 
 ## Reference
 
