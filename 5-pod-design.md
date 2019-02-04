@@ -94,7 +94,10 @@ k rollout history deploy ngix -n demo
 
 - chance replicas 
 ```
+# deployment
 k scale deploy ngix -n demo --replicas=6
+# scale replicaset (if you deploy rs instad of deployment)
+k scale rs new-replica-set -n demo --replicas=2
 ```
 
 - auto-scale during CPU
