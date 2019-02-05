@@ -137,7 +137,7 @@ k logs busybox-xxx -n demo -f
 
 - set completion cout
 ```
-k run gayan --image=busybox --restart=OnFailure --labels=app=demo-job -o yaml --dry-run -- /bin/sh -c 'echo gayan jayasundara;sleep 3600' > job.yaml
+k run gayan --image=busybox --restart=OnFailure -o yaml --dry-run -- /bin/sh -c 'echo gayan;sleep 3600' > job.yaml
 vim job.yaml
 
 apiVersion: batch/v1
