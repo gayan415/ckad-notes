@@ -9,6 +9,7 @@ This is common `kubectl` commands which I used during CKAD exam preparation.
 - [Multi-Container-Pods - 10%](3-multi-container-pods.md)
 - [Observation - 18%](4-observability.md)
 - [Pod Design - 20%](5-pod-design.md)
+- [Services & Networking - 13%](6-service-and-networking.md)
 - [State Persistence - 8%](7-state-persistence.md)
 
 ## Reference
