@@ -135,7 +135,7 @@ k get po -n demo
 k logs busybox-xxx -n demo -f
 ```
 
-- set completion cout
+- set backoffLimit, completion and parallelism
 ```
 k run gayan --image=busybox --restart=OnFailure -o yaml --dry-run -- /bin/sh -c 'echo gayan;sleep 3600' > job.yaml
 vim job.yaml
@@ -148,7 +148,9 @@ metadata:
     app: demo-job
   name: gayan
 spec:
-  completions: 5 # adding this
+  completions: 5 # number of attempt before finish the job
+  backoffLimit : 25 # number of retries before considering a Job as failed.
+  parallelism: 3 # parallelly running pods at a time
   template:
     metadata:
       creationTimestamp: null
