@@ -76,7 +76,7 @@ k get deploy ngix -n demo -o yaml --export
 k set image deploy ngix -n demo ngix=nginx:1.7.9
 ```
 
-- check lrollout history
+- check rollout history
 ```
 k rollout history deploy ngix -n demo
 ```
@@ -86,6 +86,10 @@ k rollout history deploy ngix -n demo
 k rollout undo deploy ngix -n demo 
 ```
 
+- how to rollback specific version
+```
+k rollout undo deploy nginx -n demo --to-revision=2
+```
 - set image
 ```
 k set image deploy ngix -n demo ngix=ngix:1.91
