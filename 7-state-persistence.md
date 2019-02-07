@@ -35,6 +35,7 @@ apiVersion: v1
 metadata:
   name: myvolume
 spec:
+  persistentVolumeReclaimPolicy: Retain # Retain, Recycle or Delete - Default Retain
   storageClassName: normal
   capacity:
     storage: 10Gi
