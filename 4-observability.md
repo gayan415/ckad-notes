@@ -44,6 +44,15 @@ readinessProbe:
   initialDelaySeconds: 5
   periodSeconds: 5
 ```
+TCP check
+```
+redinessProbe:
+  tcpSocket:
+    port: 3306
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  failureThreshold: 5
+```
 
 ### logs
 ```
